@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_time_line">
+
+    <TextView
+        android:id="@+id/txtvSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeLineScroll"
+        android:background="@android:color/white"
+        android:textSize="@dimen/time_line_label_font"
+        android:text=" "
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_line_width"
+        android:background="@color/time_line_separator_color"
+        android:layout_above="@id/txtvSpace"
+        tools:ignore="RtlHardcoded" />
+
+    <HorizontalScrollView
+        android:id="@+id/timeLineScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/flGridContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/llTimeLineContainer"
+                android:layout_alignLeft="@+id/llLabelsContainer"
+                android:layout_alignRight="@+id/llLabelsContainer"
+                android:layout_alignParentTop="true"
+                android:background="@color/bg_time_line"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/llTimeLineContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_small" />
+
+            <LinearLayout
+                android:id="@+id/llLabelsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_small"
+                android:paddingBottom="@dimen/padding_default"
+                android:orientation="horizontal"
+                android:layout_below="@id/llTimeLineContainer"
+                android:background="@android:color/white"/>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

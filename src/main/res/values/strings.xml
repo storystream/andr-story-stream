@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Story Streams</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- ArticleActivity -->
+    <string name="imgvHideContentDescription">Show / hide menu panel button</string>
+    <string name="txtvHide">Hide</string>
+    <string name="txtvShow">Show</string>
+    <string name="imgvNext">Move next button</string>
+    <string name="imgvBack">Move back button</string>
+
+    <!-- SplashActivity -->
+    <string name="imgvSplashImage">Application splash image</string>
+
+    <!-- ArticleLvItem -->
+    <string name="imgvRightArrow">Right arrow</string>
+    <string name="imgvCalendar">Calendar icon</string>
+
+    <!-- IncompleteStoryDialogFragment -->
+    <string name="titleInformation">Information</string>
+    <string name="msgIncompleteStory">Article is not completed. All article parts needs to be completed on the server including article legend and storyline names</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewHorizontalLine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/time_line_height"
+        android:layout_centerVertical="true"
+        android:background="@color/time_line_orange" />
+
+    <LinearLayout
+        android:id="@+id/llCirclesContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:scrollbars="none" />
+
+</RelativeLayout>

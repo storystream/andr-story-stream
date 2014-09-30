@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <Spinner
+        android:id="@+id/spinnerAuthors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerAuthors"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/llTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvArticle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/padding_default"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_small"
+                android:lineSpacingMultiplier="1.25"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llMenuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlMenuBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_bar_height"
+            android:background="@color/menu_panel_background"
+            android:paddingLeft="@dimen/padding_default"
+            android:paddingRight="@dimen/padding_default">
+
+            <ImageView
+                android:id="@+id/imgvHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_default"
+                android:src="@drawable/ic_arrow_down"
+                android:contentDescription="@string/imgvHideContentDescription"/>
+
+            <TextView
+                android:id="@+id/txtvHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgvHide"
+                android:text="@string/txtvHide"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/imgvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_default"
+                android:rotation="-90"
+                android:src="@drawable/ic_arrow_down"
+                android:contentDescription="@string/imgvNext"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_large"
+                android:layout_toLeftOf="@id/imgvNext"
+                android:alpha="0.8"
+                android:background="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/imgvPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/viewDivider"
+                android:padding="@dimen/padding_default"
+                android:rotation="90"
+                android:src="@drawable/ic_arrow_down"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/imgvBack"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flTimeLineContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlGridRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_time_line_bottom_bar">
+
+    <LinearLayout
+        android:id="@+id/llGridContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:background="@color/bg_time_line"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_line_height"
+        android:layout_alignLeft="@id/llGridContainer"
+        android:layout_alignRight="@id/llGridContainer"
+        android:layout_alignBottom="@id/llGridContainer"
+        android:background="@color/time_line_separator_color"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/viewCircleIndicator"
+        android:layout_width="@dimen/grid_circle_indicator_size"
+        android:layout_height="@dimen/grid_circle_indicator_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circle"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>

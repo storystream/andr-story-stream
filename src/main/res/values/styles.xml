@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.ReaderApp</item>
+    </style>
+
+    <style name="ActionBar.Solid.ReaderApp" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_readerapp</item>
+        <item name="android:titleTextStyle">@style/ReaderApp.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="ReaderApp.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

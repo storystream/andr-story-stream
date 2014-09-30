@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_default">14sp</dimen>
+
+    <dimen name="time_line_separator_width">32dp</dimen>
+    <dimen name="time_line_height">2dp</dimen>
+    <dimen name="time_line_circle_size">20dp</dimen>
+    <dimen name="time_line_inner_circle_size">16dp</dimen>
+    <dimen name="time_line_circle_padding">8dp</dimen>
+    <dimen name="time_line_padding">16dp</dimen>
+
+    <dimen name="time_line_label_font">9sp</dimen>
+
+    <dimen name="menu_bar_height">48dp</dimen>
+    <dimen name="top_bar_height">32dp</dimen>
+
+    <dimen name="grid_line_width">1dp</dimen>
+    <dimen name="grid_line_height">1dp</dimen>
+    <dimen name="grid_circle_indicator_size">5dp</dimen>
+
+    <dimen name="default_circle_size">12sp</dimen>
+</resources>

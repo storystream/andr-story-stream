@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme_blue">#43add4</color>
+    <color name="app_theme_blue_semi_transparent">#8043add4</color>
+
+    <color name="time_line_orange">#ee5f01</color>
+    <color name="time_line_green">#64a901</color>
+    <color name="time_line_blue">#184fb3</color>
+    <color name="time_line_yellow">#e8a300</color>
+    <color name="time_line_orange_selection">#ed5e00</color>
+    <color name="time_line_labels_color">#ff000000</color>
+    <color name="time_line_separator_color">#a0a0a0</color>
+
+    <color name="bg_time_line">#f6f6f6</color>
+    <color name="bg_time_line_bottom_bar">#ffffff</color>
+
+    <color name="bg_splash_start">#44acd1</color>
+    <color name="bg_splash_end">#42aed4</color>
+
+    <color name="lvitem_date_color">#ffadadad</color>
+    <color name="menu_panel_background">#ec000000</color>
+</resources>
